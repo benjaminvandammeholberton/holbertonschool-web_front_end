@@ -162,10 +162,10 @@ display: none;
   color: var(--nav-item-link-hover);
 }
 
-.row ul {
+.row li{
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .col-1-3{
