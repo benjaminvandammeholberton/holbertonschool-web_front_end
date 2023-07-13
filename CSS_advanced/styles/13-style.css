@@ -41,7 +41,7 @@ font-family: var(--font-family-title);
 font-weight: var(--font-weight-bold);
 }
 
-a {
+a:link{
 color: var(--text-color);
 text-decoration: none;
 }
