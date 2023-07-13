@@ -92,7 +92,7 @@ display: none;
 }
 
 .section-body {
-  padding: var(--section-footer-align);
+  padding: var(--section-body-padding);
 }
 
 .section-footer {
