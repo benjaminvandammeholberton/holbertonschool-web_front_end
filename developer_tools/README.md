@@ -1,5 +1,6 @@
 # Developer tools
 ![cover](/images/0872ca9b19e11650e355.jpeg)
+
 In this project, you will analyze this website https://dev-tools.hbtn.info/.
 
 ## Learning Objectives
