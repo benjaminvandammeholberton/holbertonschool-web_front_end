@@ -1,0 +1,10 @@
+/* Task 6 */
+$first-color: #FF0000;
+$second-color: #00FF00;
+
+button {
+    color: $first-color;
+    &:hover {
+        color: $second-color;
+    }
+}
