@@ -23,7 +23,7 @@
 Download the images linked in the CSS Advanced directory and place them into an images directory at the root of the project.
 
 ### ```HTML starter file```
-
+```
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
