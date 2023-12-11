@@ -1,12 +1,12 @@
 /* Task 13 */
 
-$map-width: ('col-1': 100%, 'col-2': 50%, 'col-3': 33.3333333333%, 'col-4': 25%);
+$map: ('col-1': 100%, 'col-2': 50%, 'col-3': 33.3333333333%, 'col-4': 25%);
 
 @for $i from 1 through 4 {
-    @each $col, $width-select in $map-width {
+    @each $col, $value in $map {
         @if $col == 'col-#{$i}' {
             .col-#{$i}{
-                width: $width-select;
+                width: $value;
             }
         }
     }
