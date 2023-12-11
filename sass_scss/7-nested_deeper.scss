@@ -1,0 +1,14 @@
+/* Task 7 */
+$font-size-medium: 14px;
+$font-size-large: 16px;
+$font-size-small: 12px;
+
+body {
+    font-size: $font-size-medium;
+    h1 {
+        font-size: $font-size-large;
+        .smaller {
+            font-size: $font-size-small;
+        }
+    }
+}
