@@ -1,0 +1,10 @@
+/* Task 4 */
+$first-color: #3D3D3D;
+$second-color: #FF0000;
+
+body {
+    color: $first-color;
+    .red {
+        color: $second-color;
+    }
+}
