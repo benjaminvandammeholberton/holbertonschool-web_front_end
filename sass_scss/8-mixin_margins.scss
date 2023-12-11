@@ -1,0 +1,16 @@
+/* Task 8 */
+@mixin first-margin-set {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@mixin second-margin-set {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+body {
+    @include first-margin-set;
+}
+div {
+    @include second-margin-set;
+}
