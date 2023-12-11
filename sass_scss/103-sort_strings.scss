@@ -1,0 +1,18 @@
+/* Task 16 */
+
+@import "103-sort_list";
+
+@function list-sort($list_to_sort) {
+    $sortedlist: ();
+    @while length($list_to_sort) > 0 {
+      $value: nth($list_to_sort,1);
+      @each $item in $list_to_sort {
+        @if $item < $value {
+          $value: $item;
+        }
+      }
+      $sortedlist: append($sortedlist, $value, 'space');
+      $list_to_sort: list-remove($list_to_sort, index($list_to_sort, $value));
+    }
+    @debug $sortedlist;
+  }
