@@ -1,0 +1,7 @@
+/* Task 12 */
+
+@for $i from 1 through 5 {
+    h#{$i} {
+        font-size: #{$i}px;
+    }
+}
