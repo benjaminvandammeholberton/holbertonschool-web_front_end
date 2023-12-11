@@ -22,8 +22,8 @@
 ### Required images for your HTML files
 Download the images linked in the CSS Advanced directory and place them into an images directory at the root of the project.
 
-```### HTML starter file```
-```
+### ```HTML starter file```
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -1034,10 +1034,12 @@ In the ```/* Grid``` section within your CSS
 
 - Add a selector for the ```row``` class
     - Property: ```display```, Value: ```flex```
+    
 => Now, all children from the ```row``` class are flex items
 
 - Entirely remove the ```row::after``` declaration
 - Remove the ```float: left``` inside ```[class*='col-']```
+
 => All elements should appear same than before using the float
 
 ### 1. Add new classes on sections
@@ -1046,18 +1048,23 @@ Using the files from the previous task as the base for this task:
 In the outermost section tag for ```services```
 
 - Add the class ```section-services```
+
 In the outermost section tag for ```works```
 
 - Add the class ```section-works```
+
 In the outermost section tag for ```about```
 
 - Add the class ```section-about-us```
+
 In the outermost section tag for ```latest_news```
 
 - Add the class ```section-latest-news```
+
 In the outermost section tag for ```testimonial```
 
 - Add the class ```section-testimonial```
+
 In the outermost section tag for ```contact```
 
 - Add the class ```section-contact```
@@ -1078,6 +1085,7 @@ Before ```/*** 4. CARD ***/```, add a new comment: ```/* Section Latest news ===
 Under that comment section, target the ```row``` class inside ```section-latest-news``` class
 
 - Property: ```flex-direction```, Value: ```row-reverse```
+
 The Latest news should appear in a reverse order.
 
 
@@ -1291,15 +1299,18 @@ Add a separator comment
 
 Target the ```post-meta-list``` class
 - Property: ```flex-direction```, Value: ```column```
+
 Target the ```strong``` tag inside ```post-meta-list``` class
 - Property: ```color```, Value: point to the variable ```color-primary```
 - Property: ```font-size```, Value: point to the variable ```font-size-small```
 - Property: ```text-transform```, Value: ```uppercase```
 - Property: ```display```, Value: ```block```
+
 Target all classes that start with ```post-meta-``` inside ```post-meta-list``` class
 - Property: ```margin-bottom```, Value: ```1rem```
 - Property: ```padding-bottom```, Value: ```1rem```
 - Property: ```border-bottom```, Values: ```0.2rem solid``` and point to the ```color-light-grey``` variable
+
 Target the last child of all classes that start with ```post-meta``` inside ```post-meta-list``` class
 - Property: ```border```, Value: ```none```
 - Property: ```margin-bottom```, Value: ```3rem```
@@ -1311,10 +1322,13 @@ Add a separator comment
 Target the ```tag-list``` class
 - Property: ```padding```, Value: ```0```
 - Property: ```list-style```, Value: ```none```
+
 Target all ```li``` inside the ```tag-list``` class
 - Property: ```display```, Value: ```inline```
+
 Target the ```after``` pseudo element on the ```li``` inside ```tag-list``` class
 - Property: ```content```, Value: ```", "``` (space after the comma)
+
 Target the ```after``` pseudo element of the last-child on the ```li``` inside ```tag-list``` class
 - Property: ```content```, Value: empty
 
@@ -1396,6 +1410,7 @@ Write a CSS file that display a set of boxes in the same layout as the example s
 - You are not allowed to use ```text-align```
 - You are not allowed to use ```margin``` or ```padding```
 - You are not allowed to change the HTML file
+
 Use this ```101-index.html``` file:
 ```
 <!DOCTYPE html>
