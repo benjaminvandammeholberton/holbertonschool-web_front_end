@@ -1,6 +1,6 @@
 # Sass & Scss
 
-![cover](/images/9936ba361a3962278900.jpeg)
+![cover](/images/9936ba361a3962278900.jpg)
 
 ## Learning Objectives
 
