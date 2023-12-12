@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: end;
+  transform: translate(0px, 30px);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.box1 {
+  background-color: green;
+  align-self: center;
+}
+
+.box2 {
+  background-color: blue;
+  align-self: center;
+}
+
+.box3 {
+  background-color: darkslategray;
+  width: 300px;
+  height: 200px;
+  font-size: 75px;
+}
+
+.box4 {
+  background-color: violet;
+  align-self: center;
+}
+
+.box5 {
+  background-color: orange;
+  align-self: center;
+}
+
+.box2,
+.box4 {
+  width: 230px;
+  height: 110px;
+  font-size: 40px;
+  transform: translate(0px, 20px);
+}
+
+.box1,
+.box5 {
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+  transform: translate(0px, 20px);
+}
