@@ -1093,91 +1093,91 @@ After the ```Tag list``` styles, create a new comment
 ![](/form/images/d8fbcb53ffafe396c0ed.png)
 
 ### 4. add help messages
-From 04-article.html, create 05-article.html:
+**From ```04-article.html```, create ```05-article.html```:**
 
-In each span with form-field-container class that contains an input
-After the input add an empty <i> with the class form-field-icon
-In the first fieldset
-Inside the first div with form-field class, right after the closing span tag, add a paragraph
-Class: form-help
-Text: First name should be at least 3 characters and only contains letters
-Inside the second div with form-field class, right after the closing spantag, add a paragraph
-Class: form-help
-Text: Last name should be at least 3 characters and only contains letters
-Nothing is added in the third form-field
-In the second fieldset
-Inside the first div with form-field class, right after the closing span tag, add a paragraph
-Class: form-help
-Text: Title should be at least 4 characters and only contains letters
-Inside the second div with form-field class, right after the closing span tag, add a paragraph
-Class: form-help
-Text: Comment should be at least 10 characters
-From 04-styles.css, create 05-styles.css:
+- In each span with ```form-field-container``` class that contains an ```input```
+    - After the input add an empty ```<i>``` with the class ```form-field-icon```
+- In the first ```fieldset```
+    - Inside the first div with ```form-field``` class, right after the closing ```span``` tag, add a paragraph
+        - Class: ```form-help```
+        - Text: ```First name should be at least 3 characters and only contains letters```
+    - Inside the second div with ```form-field``` class, right after the closing ```span```tag, add a paragraph
+        - Class: ```form-help```
+        - Text: ```Last name should be at least 3 characters and only contains letters```
+    - Nothing is added in the third ```form-field```
+- In the second ```fieldset```
+    - Inside the first div with ```form-field``` class, right after the closing ```span``` tag, add a paragraph
+        - Class: ```form-help```
+        - Text: ```Title should be at least 4 characters and only contains letters```
+    - Inside the second div with ```form-field``` class, right after the closing ```span``` tag, add a paragraph
+        - Class: ```form-help```
+        - Text: ```Comment should be at least 10 characters```
 
-Add a new separation
+**From ```04-styles.css```, create ```05-styles.css```:**
 
+- Add a new separation
+```
 /* Form group
 ============================= */
-Target form-group class
-
-Property: padding, Value: 1rem
-Property: margin, Value: 0
-Property: background-color, Value: point to the variable color-white
-Target the focus-within state of form-group class
-
-Property: background-color, Value: point to the color-light-grey (if it was not done in the previous task)
-Property: transition, Value: .3s
-Add a new separation
-
+```
+- Target ```form-group``` class
+    - Property: ```padding```, Value: ```1rem```
+    - Property: ```margin```, Value: ```0```
+    - Property: ```background-color```, Value: point to the variable ```color-white```
+- Target the ```focus-within``` state of ```form-group``` class
+    - Property: ```background-color```, Value: point to the ```color-light-grey``` (if it was not done in the previous task)
+    - Property: ```transition```, Value: ```.3s```
+- Add a new separation
+```
 /* Form field
 ============================= */
-Target form-field-container class
-
-Property: position, Value: relative
-Target form-field-icon class
-
-Property: font-style, Value: normal
-Add a new separation
-
+```
+- Target ```form-field-container``` class
+    - Property: ```position```, Value: ```relative```
+- Target ```form-field-icon``` class
+    - Property: ```font-style```, Value: ```normal```
+- Add a new separation
+```
 /* Form help
 ============================= */
-Target form-help class inside form-group class
+```
+- Target ```form-help``` class inside ```form-group``` class
+    - Property: ```margin```, Value: ```0```
+    - Property: ```line-height```, Value: ```1.3```
+    - Property: ```letter-spacing```, Value: ```.019rem```
+    - Property: ```color```, Value: point to the variable ```color-dark-grey```
+    - Property: ```font-size```, Value: point to the variable ```font-size-small```
+    - Property: ```max-height```, Value: ```0```
+    - Property: ```transition```, Value: ```.3s```
+    - Property: ```overflow```, Value: ```hidden```
+- Target ```form-help``` class when ```form-group``` class has a ```focus-within``` state
+    - Property: ```max-height```, Value: ```20rem```
+    - Property: ```margin```, Value: ```.4rem 0 0```
 
-Property: margin, Value: 0
-Property: line-height, Value: 1.3
-Property: letter-spacing, Value: .019rem
-Property: color, Value: point to the variable color-dark-grey
-Property: font-size, Value: point to the variable font-size-small
-Property: max-height, Value: 0
-Property: transition, Value: .3s
-Property: overflow, Value: hidden
-Target form-help class when form-group class has a focus-within state
+**Final rendering when “Last name” is focused**
 
-Property: max-height, Value: 20rem
-Property: margin, Value: .4rem 0 0
-Final rendering when “Last name” is focused
-
-
-
+![](/form/images/7d03c7365d5974440255.png)
 
 ### 5. add pure HTML / CSS error handling
-From 05-styles.css, create 06-styles.css:
-
-In the variable section, after the color-dark-grey variable
-Create a custom property
-Name: color-red, Value: #cd3e65
-Create a custom property
-Name: color-green, Value: #08805b
-After the text-color variable
-Create a custom property
-Name: valid-color, Value: point to thecolor-green variable
-Create a custom property
-Name: error-color, Value: point to the color-red variable
-At the end of the CSS file
-Add a new separation
+**From ```05-styles.css```, create ```06-styles.css```:**
+- In the variable section, after the ```color-dark-grey``` variable
+    - Create a custom property
+        - Name: ```color-red```, Value: ```#cd3e65```
+    - Create a custom property
+        - Name: ```color-green```, Value: ```#08805b```
+- After the ```text-color``` variable
+    - Create a custom property
+        - Name: ```valid-color```, Value: point to the ```color-green``` variable
+    - Create a custom property
+        - Name: ```error-color```, Value: point to the ```color-red``` variable
+- At the end of the CSS file
+    - Add a new separation
+```
 /* Form error handling
 ============================= */
-Add this code to your file. The code is given to you with comments to help you to understand, because it’s a little bit advanced but really powerful when correctly understood.
+```
+- Add this code to your file. The code is given to you with comments to help you to understand, because it’s a little bit advanced but really powerful when correctly understood.
+```
 /* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
 
 input:not(:placeholder-shown) ~ .form-field-icon::after {
@@ -1218,94 +1218,94 @@ input:required:valid:not(:placeholder-shown),
 textarea:valid:not(:placeholder-shown) {
   border: 0.1rem solid var(--valid-color);
 }
-In the /* Base section, after the hover state of the button
-Target the button-primary class
-Property: color, Value: point to the variable color-white
-Property: background, Value: point to the variable color-primary
-Target the hover state of the button-primary class
-Property: color, Value: point to the variable color-primary
-Property: background, Value: point to the variable color-white
-Final rendering of validation layout
+```
+- In the ```/* Base``` section, after the hover state of the ```button```
+    - Target the ```button-primary``` class
+        - Property: ```color```, Value: point to the variable ```color-white```
+        - Property: ```background```, Value: point to the variable ```color-primary```
+    - Target the hover state of the ```button-primary``` class
+        - Property: ```color```, Value: point to the variable ```color-primary```
+        - Property: ```background```, Value: point to the variable ```color-white```
 
+**Final rendering of validation layout**
 
-
+![](/form/images/9aa6033da67ab8d3e787.png)
 
 ### 6. add the search form
-From 06-article.html, create 07-article.html:
+**From ```06-article.html```, create ```07-article.html```:**
 
-In the navigation, add a new <li> at the end. Also add the nav-item class on the li.
-Create a new <form> inside the li.
-Action attr: #
-Method attr: post
-Class: form-search
-Create a new input, type search
-Name attr: q (it’s common to name the search q (=query))
-Id attr: search-input
-Placeholder: Search...
-aria-label="Search through site content" (we will see in the accessibility module what is that attribute)
-Create a button with the class search-button
-Copy and paste the following code inside your button
+- In the navigation, add a new ```<li>``` at the end. Also add the ```nav-item``` class on the ```li```.
+    - Create a new ```<form>``` inside the ```li```.
+        - Action attr: ```#```
+        - Method attr: ```post```
+        - Class: ```form-search```
+        - Create a new ```input```, type ```search```
+            - Name attr: ```q``` (it’s common to name the search q (=query))
+            - Id attr: ```search-input```
+            - Placeholder: ```Search...```
+            - ```aria-label="Search through site content"``` (we will see in the accessibility module what is that attribute)
+        - Create a ```button``` with the class ```search-button```
+            - Copy and paste the following code inside your button
+```
 <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="search-icon">
   <title>
     Search icon
   </title>
   <path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/>
 </svg>
-From 06-styles.css, create 07-styles.css:
+```
+**From ```06-styles.css```, create ```07-styles.css```:**
 
-At the end of the file, create a new comment separation
-
+- At the end of the file, create a new comment separation
+```
 /*** SEARCH FORM ***/
-Target the form-search class
+```
+- - Target the ```form-search``` class
+    - Property: ```display```, Value: ```block```
+    - Property: ```padding```, Value: ```.5rem 0```
+    - Property: ```position```, Value: ```relative```
+- Target the ```search-button``` class inside the ```form-search``` class
+    - Property: ```display```, Value: ```inline-block```
+    - Property: ```background```, Value: ```transparent```
+    - Property: ```border```, Value: ```0```
+    - Property: ```margin``` Value: ```0```
+    - Property: ```padding```, Value: ```0```
+- Target the ```search-icon``` class inside the ```search-button``` class
+    - Property: ```fill```, Value: point to the variable ```color-white```
+    - Property: ```width```, Value: ```1.5rem```
+    - Property: ```height```, Value: ```1.5rem```
+- Target the ```input``` type ```search``` inside the ```form-search``` class
+    - Property: ```display```, Value: ```inline-block```
+    - Property: ```color```, Value: point to the variable ```color-white```
+    - Property: ```padding```-right, Value: ```2rem```
+    - Property: ```height```, Value: ```3rem```
+    - Property: ```border```, Value: ```0```
+    - Property: ```outline```, Value: ```none```
+    - Property: ```position```, Value: ```absolute```
+    - Property: ```width```, Value: ```0```
+    - Property: ```right```, Value: ```0```
+    - Property: ```background```, Value: ```none```
+    - Property: ```cursor```, Value: ```pointer```
+    - Property: ```z-index```, Value: ```3```
+    - Property: ```transition```, Value: ```width .4s cubic-bezier(0, 0.795, 0, 1)```
+- Target the ```focus``` state of ```input``` type ```search``` inside the ```form-search``` class
+    - Property: ```position```, Value: ```relative```
+    - Property: ```width```, Value: ```15rem```
+    - Property: ```z-index```, Value: ```1```
+    - Property: border-bottom, Value: ```.1rem solid var(--color-grey)```
+    - Property: ```padding```, Value: ```0```
+    - Property: ```cursor```, Value: ```text```
+    - Property: ```margin```, Value: ```0 1rem```
 
-Property: display, Value: block
-Property: padding, Value: .5rem 0
-Property: position, Value: relative
-Target the search-button class inside the form-search class
+**Final rendering of the search button**
 
-Property: display, Value: inline-block
-Property: background, Value: transparent
-Property: border, Value: 0
-Property: margin Value: 0
-Property: padding, Value: 0
-Target the search-icon class inside the search-button class
+![](/form/images/18dbfc6da16fb3c9992b.png)
 
-Property: fill, Value: point to the variable color-white
-Property: width, Value: 1.5rem
-Property: height, Value: 1.5rem
-Target the input type search inside the form-search class
+**Final rendering of the search focus**
 
-Property: display, Value: inline-block
-Property: color, Value: point to the variable color-white
-Property: padding-right, Value: 2rem
-Property: height, Value: 3rem
-Property: border, Value: 0
-Property: outline, Value: none
-Property: position, Value: absolute
-Property: width, Value: 0
-Property: right, Value: 0
-Property: background, Value: none
-Property: cursor, Value: pointer
-Property: z-index, Value: 3
-Property: transition, Value: width .4s cubic-bezier(0, 0.795, 0, 1)
-Target the focus state of input type search inside the form-search class
+![](/form/images/4e17e62ca13e7e635d36.png)
 
-Property: position, Value: relative
-Property: width, Value: 15rem
-Property: z-index, Value: 1
-Property: border-bottom, Value: .1rem solid var(--color-grey)
-Property: padding, Value: 0
-Property: cursor, Value: text
-Property: margin, Value: 0 1rem
-Final rendering of the search button
+**Final rendering of the search focus with text**
 
-
-
-Final rendering of the search focus
-
-
-
-Final rendering of the search focus with text
-
-
+![](/form/images/ae899c60b1e4b1f97bcc.png)
 
