@@ -6,3 +6,4 @@
 - ## sass_scss
 - ## flexbox
 - ## forms
+- ## responsive_design
