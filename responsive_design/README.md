@@ -37,7 +37,7 @@ In your `01-styles.css` file
 - Inside the selector that targets `section-inner` class inside `section-hero` class
     - Update the `min-height` to `35vh`
 
-*Final rendering of the Hero section should look something like this*
+**Final rendering of the Hero section should look something like this**
 ![](/responsive_design/images/f464d8346c36134ec4ae.png)
 
 ### 1. Make the container flexible
@@ -45,9 +45,9 @@ Using the previous file as the base, in your `02-styles.css` file update the `.c
 
 If you resize your browser, you should see that the content is resizing.
 
-*Wide screen:*
-![](responsive_design/images/5356d9d9b1de3ef692a1.png)
+**Wide screen:**
+![](/responsive_design/images/5356d9d9b1de3ef692a1.png)
 
-*Narrow screen:*
+**Narrow screen:**
 ![](/responsive_design/images/9aeb51d5b4c9586ea05a.png)
 
