@@ -86,3 +86,63 @@ Check with Axe to ensure the issue is fixed.
 
 ![](/accessibility/images/6ca4565a4d207b00f718.png)
 
+### 3. Documents must have `<title>` element to aid in navigation
+
+Taking your code from the previous task, in your `fix-a11y/02-index.html` file
+
+Add a title: `Homepage - A fake website`
+
+Check with Axe to ensure the issue is fixed
+
+![](/accessibility/images/4c0ba151685ae5b2c801.png)
+
+### 4. `<html>` element must have a lang attribute
+
+Taking your code from the previous task, in your `fix-a11y/03-index.html` file
+
+On the `html` tag, add the attribute `lang` with the `en` value.
+
+Check with Axe to ensure the issue is fixed.
+
+### 5. Images must have alternate text
+
+Taking your code from the previous task, in your `fix-a11y/04-index.html` file
+
+Locate the `img` that points to the `logo.png`
+Add an `alt` attribute with the text `Name of the logo`
+Locate the `img` that points to the `hero-img.png`
+Add an empty `alt` (decorative image)
+
+### 6. Form elements must have labels
+
+Taking your code from the previous task, in your `fix-a11y/05-index.html` file, locate the `form`
+- Add a `label` just before the `input`
+    - Class: `visually-hidden`
+    - For: `email`
+- On the `input`
+    - Add an `id`: `email`
+
+Axe tells use that the issue is solved. But actually, some elements should be fixed for better accessibility and usability.
+
+- We can change the `type` from text to `email`
+- Add the attribute `autocomplete` with the value `email`
+- Add the `required` attribute and the `aria-required="true"`
+- Change the `a` to be a `button`
+- We can remove the `placeholder` as it doesn’t add any value
+
+We don’t have any error handling in our example, that should exist on the front-end / back-end side.
+
+### 7. Links must have discernible text
+
+In your `fix-a11y/06-index.html` file
+
+Locate the `facebook-icon` and add an `aria-label` on the a with the text `Facebook`
+Locate the twitter-icon and add an `aria-label` on the a with the text `Twitter`
+
+Links should never be empty, in our case, we are using a font (like Font Awesome) to generate icons.
+
+### 8. Zooming and scaling must not be disabled
+
+In your `fix-a11y/07-index.html` file
+
+Locate the `meta` viewport and remove `user-scalable=no`
