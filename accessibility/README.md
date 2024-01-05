@@ -74,3 +74,15 @@ Using the stylesheet from the previous task, in your `skip-links/01-styles.css` 
 - Target the `focus` state of `skip-link` class
     - Property: opacity, Value: `1`
     - Property: transform, Value: `translateY(0)`
+
+### 2. Elements must have sufficient color contrast
+You are given this `fix-a11y/00-index.html` starter file:
+
+As you can see, the contrast is not good. The easy fix is simply to remove the body styles in the embed `<style>`. Do this in your `fix-a11y/01-index.html` file. In a real case, you could use the Contrast Ratio section of the Color Picker.
+
+Check with Axe to ensure the issue is fixed.
+
+**Rendering the page should display something like this**
+
+![](/accessibility/images/6ca4565a4d207b00f718.png)
+
