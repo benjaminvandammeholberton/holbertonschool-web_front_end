@@ -146,3 +146,63 @@ Links should never be empty, in our case, we are using a font (like Font Awesome
 In your `fix-a11y/07-index.html` file
 
 Locate the `meta` viewport and remove `user-scalable=no`
+
+
+### 9. Heading levels should only increase by one and all page content must be contained by landmarks
+
+You can install the `headingsMap` extension to have a visual representation of your headings.
+
+Taking your code from the previous task, in your `fix-a11y/08-index.html` file
+
+- Like our Techium project, we are going to create an `h1` just after the `<div class="header">` closing tag. (The `h1` will be sibling to the `<div class="header">` div)
+    - Text: `Homepage`
+- Change `<h6>This is me</h6>` to be `<h2>This is me</h2>`
+- Change `<h1>Philip Gilbert</h1>` to be `<span>Philip Gilbert</span>`
+- Change `<h6>About Me</h6>` to be `<h2>About Me</h2>`
+- Change `<h1>Personal Details</h1>` to be `<span>Personal Details</span>`
+- Change `<h1>My Offered Services</h1>` to be `<h2>My Offered Services</h2>`
+- Change `<h4>Web Design</h4>` to be `<h3>Web Design</h3>`
+- Change `<h4>Web Development</h4>` to be `<h3>Web Development</h3>`
+- Change `<h1 class="counter">2536</h1>` to be `<span class="counter">2536</span>`
+- Change `<h1 class="counter">6784</h1>` to be `<span class="counter">6784</span>`
+- Change `<h1>Client's Feedback About Me</h1>` to be `<h2>Client's Feedback About Me</h2>`
+- Change `<h4>Harriet Maxwell</h4>` to be `<span>Harriet Maxwell</span>`
+- Change `<h1>Choose Your Plan</h1>` to be `<h2>Choose Your Plan</h2>`
+- Change `<h1>01</h1>` to be `<h3>01</h3>`
+- Change `<h1>$199.00</h1>` to be `<span>$199.00</span>`
+- Change `<h4>About Me</h4>` to be `<span>About Me</span>`
+- Change `<h4>Newsletter</h4>` to be `<span>Newsletter</span>`
+- Change `<h4>Follow Me</h4>` to be `<span>Follow Me</span>`
+
+Fixing wrong `headings` is not an easy task. Headings represent the outline of your content. Like the table of contents in a book, headings should help to understand what is inside your page.
+
+Always ask yourself if that word or sentence would make sense for anybody visiting your website.
+
+### 10. Document must have one main landmark
+
+You can install the `Landmarks` extension to visually locate the landmarks on your pages.
+
+Taking your code from the previous task, in your `fix-a11y/09-index.html` file
+- Locate the `header` class and convert that `<div>` into a `<header>` tag (only change the tag, no need to change or remove other attributes in the tag)
+- Convert the `<div class='nav'>` into a `<nav>` element (only change the tag, no need to change or remove other attributes in the tag)
+- Wrap everything from the `<h1>Homepage</h1>` to before the `<div class="footer">` in a `<main>` tag.
+- Locate the `footer` class and transform the div to a `<footer>` (only change the tag, no need to change or remove other attributes in the tag)
+- Locate all divs with the `section` class, and update divs to be `<section>` (only change the tag, no need to change or remove other attributes in the tag). Except the one with the `Projects Completed` text. Sections should have headings, we don’t have one anymore.
+
+If you open the `landmarks` extension, you should see the landmarks showing.
+
+Tip
+
+Remember that `header`, `section`, `footer` etc contain a default role (=landmarks).
+
+All automated issues are now solved! You fixed around 50% of accessibility issues. The rest are manual issues, tested using screen-reading tools or just reading the code.
+
+### 11. More than 2 elements become list
+
+Automated tools can’t always alert about elements that should exist as a list.
+
+Taking your code from the previous task, in your `fix-a11y/10-index.html` file
+- Locate the `nav`
+    - Transform the `<div>` in a `<ul>` and every `<p>` in an `li`
+- Locate the div with `package-list` class
+    - Transform the children in an `ul` with the 3 spans being each an `li`
