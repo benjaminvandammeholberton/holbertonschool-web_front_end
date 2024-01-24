@@ -10,3 +10,4 @@
 - ## accessibility
 - ## Bootstrap
 - ## Javascript_advanced
+- ## JQuery_advanced
