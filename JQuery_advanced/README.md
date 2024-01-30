@@ -41,18 +41,18 @@ You are given this starter HTML for this task:
 </html>
 ```
 
-*In a file `0-index.html`:*
+**In a file `0-index.html`:**
 - Load the latest version of jQuery using their `code.jquery.com` CDN
 - Use the Slim & minified version of jQuery
 - When the page is being loaded, verify that jQuery is loaded correctly
 - If jQuery is ready to be used, log to the console `jQuery has been loaded correctly`
 - If jQuery has not been loaded properly, log to the console `jQuery has not been loaded - correctly`
 
-*Requirements*
+**Requirements**
 - Make sure your code is in a `script` of type `application/javascript`
 
 ### 1. Creating a DOM element
-*In a file `1-index.html`, reuse the template you created previously.*
+**In a file `1-index.html`, reuse the template you created previously.**
 - Remove the code that verifies jQuery loaded and logs messages to the console
 - Create a function named `createTextElement`:
     - Within the function, create a `p` HTML element
@@ -60,12 +60,12 @@ You are given this starter HTML for this task:
     - Add the paragraph to the `body` of the page
 - Call the `createTextElement` function
 
-*Requirements:*
+**Requirements:**
 - You must use jQuery only to generate the HTML tag and attach it to the page
 - Use the keyword `append` to attach the element to the page
 
 ### 2. Creating multiple DOM elements at once
-*In a file `2-index.html`, reuse the template you created previously.*
+**In a file `2-index.html`, reuse the template you created previously.**
 - Remove the function `createTextElement`
 - Create a function named `createFamilyTree`:
 It should create a table element
@@ -77,47 +77,47 @@ The third row should contain two cells with `Antoine` and `Salva`
 Use the keyword `append` only once to attach all the elements of the table to the page
 - Call the `createFamilyTree` function
 
-*Requirements:*
+**Requirements:**
 - You must use jQuery only to generate the HTML tag and attach it to the page
 - The entire table code should be contained in one string
 
-*The table created by your script should look like this*
+**The table created by your script should look like this**
 
 ![](./README-images/b65cd64b2fe0bf2a2efd.png)
 
 ### 3. Chain DOM elements
-*In a file `3-index.html`, reuse the template you created previously. Reuse also the function named `createFamilyTree`:*
+**In a file `3-index.html`, reuse the template you created previously. Reuse also the function named `createFamilyTree`:**
 - The table is containing the exact same values as the previous task
 - This time, create each element one by one
 - Use the keywords `append` for each element and `text` for the cells
 - Do not create any intermediate variable
 - Call the `createFamilyTree` function
 
-*Tips:*
+**Tips:**
 - You can append multiple elements at once, by separating the elements with a comma
 
-*Requirements:*
+**Requirements:**
 - You must use jQuery only to generate the HTML tag and attach it to the page
 
-*The table created by your script should look like this*
+**The table created by your script should look like this**
 
 ![](./README-images/ec35dc2f7b81b4be4a47.png)
 
 ### 4. HTML function
-*In a file `4-index.html`, reuse the template you created in the previous task. Reuse also the function named `createFamilyTree`.*
+**In a file `4-index.html`, reuse the template you created in the previous task. Reuse also the function named `createFamilyTree`.**
 - Create a new function `replaceFamilyTree`:
 It should replace the childrens of the `tbody` elements with a new `tr`
 The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
 - Make sure `createFamilyTree` and `replaceFamilyTree` are called
 
-*Requirements:*
+**Requirements:**
 - You must use the keyword `html` to replace the content of the table
 - The table created by your script should look like this
 
 ![](./README-images/dac8d3e497a6b0fef6ec.png)
 
 ### 5. Click attribute and remove function
-*In a file `5-index.html`, reuse the template you created previously.*
+**In a file `5-index.html`, reuse the template you created previously.**
 - Remove the `createFamilyTree` and `replaceFamilyTree` functions
 - Create a function `createFamilyTree`:
     - It should append to the `body` an empty table, with `thead` and two cells with text `Firstname` and `Lastname`, respectively
@@ -137,15 +137,15 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
     - the fourth row `Gerard`, `Snizt`
     - the fifth row `Victor`, `Salva`
 
-*Requirements:*
+**Requirements:**
 - You must use the keywords `click`, `css`, and `remove`
 
-*The table created by your script should look like this:*
+**The table created by your script should look like this:**
 
 ![](./README-images/6aa4c6aafa86f320f78d.png)
 
 ### 6. Val, before, and prepend functions
-*In a file `6-index.html`, reuse the template you created previously.*
+**In a file `6-index.html`, reuse the template you created previously.**
 - Reuse the function `createFamilyTree` you wrote in the previous task
 - Reuse the function `addNewMember` you wrote in the previous task, and add the following modification:
     - The function should accept a new argument `position`(string)
@@ -159,15 +159,15 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
 - Call the function `createFamilyTree`
 - Call the function `createForm`
 
-*Requirements:*
+**Requirements:**
 - You must use the keywords `first`, `before`, and `prepend`
 - To select the second input, use the `nth-of-type` selector
 
-*The form created by your script should look like this:*
+**The form created by your script should look like this:**
 ![](./README-images/06a560c3cf7cbd67ebd4.png)
 
 ### 7. Query - Setup your dev environment
-*In a file `7-index.html`, reuse the template you created in the previous task*
+**In a file `7-index.html`, reuse the template you created in the previous task**
 
 - Remove the functions from the `script`
 - Import jQuery using the CDN and make sure you can access the ajax methods
@@ -190,22 +190,22 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
   - For each result returned by the API, call the function `addNewArticle` with the result’s `pageid`, `title`, and `snippet`
 - Call the function `createSearchForm` when the page loads
 
-*Requirements:*
+**Requirements:**
 - Look at the documentation from Wikipedia to query the API `https://www.mediawiki.org/wiki/API:Search`
 - Use the minified only version of jQuery, so you can access the ajax methods
 - When adding the `snippet`, make sure that the HTML coming from Wikipedia is correctly displayed
 
-*The form created by your script should look like this:*
+**The form created by your script should look like this:**
 
 ![](./README-images/1aa9995ca67d199e7ddc.png)
 
 
-*Query results should display like this:*
+**Query results should display like this:**
 
 ![](./README-images/57dd8327b2855039d8e2.png)
 
 ### 8. Pagination
-*In a file `8-index.html`, reuse the code from the previous task*
+**In a file `8-index.html`, reuse the code from the previous task**
 
 - Modify the function `createSearchForm`:
   - It should append to the body another list, with the id `pagination`
@@ -223,22 +223,22 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
     - The text of the item should be the page number
     - When clicking on a page number, it should call the function `queryWikipedia` with the right offset
 
-*Requirements:*
+**Requirements:**
 - Use the `totalhits` value from Wikipedia to define the total number of items
 - Display 10 items per page
 - Make sure your pages are displayed in an horizontal line
 
-*The form created by your script should look like this:*
+**The form created by your script should look like this:**
 
 ![](./README-images/1aa9995ca67d199e7ddc-2.png)
 
 
-*The query results should display like this, notice how the `12` is in bold, because that is the current page*
+**The query results should display like this, notice how the `12` is in bold, because that is the current page**
 
 ![](./README-images/4f86ed3cadb452d74841.png)
 
 ### 9. Wrap/unwrap
-*In a file `9-index.html`, reuse the code from the previous task*
+**In a file `9-index.html`, reuse the code from the previous task**
 - In the header, add some CSS, with the `style` tag:
   - Add a new class named `loading`
     - Set the opacity at 0.2 within that class
@@ -251,19 +251,19 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
   - It should call the function `displayLoading` before querying the API
   - Once the API returns the value, it should remove the opacity by calling the function again
 
-*Requirements:*
+**Requirements:**
 - You must use the `wrap` and `unwrap` functions of Jquery
 
-*How the page should look when results are loading*
+**How the page should look when results are loading**
 
 ![](./README-images/34aa8b01dbfb14fbb873.png)
 
 ### 10. Another Get API
-*Setup your dev environment*
+**Setup your dev environment**
 - Install `json-server` within your projects using `npm`:
 - Run the server using `node_modules/.bin/json-server --watch db.json`
 
-*You are provided with this `db.json`, don’t forget to push it, you can change the values of the `id`, `title`, `author`, `postId`, `name` as you like*
+**You are provided with this `db.json`, don’t forget to push it, you can change the values of the `id`, `title`, `author`, `postId`, `name` as you like**
 
 ```
 {
@@ -332,7 +332,7 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
 }
 ```
 
-*In a file `10-index.html`:*
+**In a file `10-index.html`:**
 - Reuse your template from the previous task, remove the functions in your `script` and the `style` in the head
 - Make sure you import jQuery using the CDN and make sure you can access the ajax methods
 - Create a function `addPostRow`:
@@ -346,11 +346,11 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
   - When the server is unavailable, display an alert with the message `Server Error`
 - Call the function `listPosts` when your page loads
 
-*Requirements:*
+**Requirements:**
 - You must use the `get` function from jQuery
 
 ### 11. Post query
-*In a file `11-index.html`, reuse the code you previously wrote*
+**In a file `11-index.html`, reuse the code you previously wrote**
 - Create a new function `buildForm`:
   - It appends to the body a `form` element
   - Inside the form, add a `div` element, with a `label` for `author` with text `Author` and an `input` of type `text` with id `author`
@@ -365,17 +365,17 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
   - If the query does not succeed, it should display an alert with the message `Error sending the POST query`
 - Call the functions `listPosts` and `buildForm` when your page loads
 
-*Requirements:*
+**Requirements:**
 - When clicking on the label, the input text should be selected by the browser
 - When pressing enter on the input text, the form should be submitted without reloading the page
 - You must use the `after` function from jQuery
 
-*With the JSON server running, your `11-index.html` should look something like this in your browser (does not have to be exactly the same, rows and values depend on what’s in your `db.json`)*
+**With the JSON server running, your `11-index.html` should look something like this in your browser (does not have to be exactly the same, rows and values depend on what’s in your `db.json`)**
 
 ![](./README-images/2d127c7a16400751c442.png)
 
 ### 12. Delete query
-*In a file `12-index.html`, reuse your code from the previous task*
+**In a file `12-index.html`, reuse your code from the previous task**
 - Modify the function `addPostRow`:
   - Add an id attribute to the paragraph with `row-ID` (the ID being the one of the post)
   - Append a span element with the text `(delete)` to the `p`, this `span` should come before the `span` with the post information
@@ -389,6 +389,6 @@ The `tr` element should contain two cells with `Gerard` and `Bonissa` in each
 Requirements:
 - You must use the function `remove` from jQuery
 
-*With your JSON server running, `12-index.html` should look like this in your browser, actual rows and values depend on what’s in your `db.json`*
+**With your JSON server running, `12-index.html` should look like this in your browser, actual rows and values depend on what’s in your `db.json`**
 
 ![](./README-images/b8759684f071da1e1449-2.png)
