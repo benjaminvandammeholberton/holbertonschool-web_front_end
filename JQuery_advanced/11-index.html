@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 11</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+</body>
+<script type="application/javascript">
+    function addPostRow(data) {
+        $('body').append(`<p><span>Post created with id ${data.id}, title: ${data.title}, author: ${data.author}</span></p>`)
+
+    }
+
+    function listPosts() {
+        $.ajax({
+            type: 'GET',
+            url: 'http://localhost:3000/posts',
+            success: function (data) {
+                $.each(data, function (i, entry) {
+                    addPostRow(entry)
+                })
+            },
+            error: function () {
+                alert('Server error')
+            }
+        })
+    }
+
+    function buildForm() {
+        $('body').append('<form>')
+        $('form').append('<div><label for="author">Author</label><input type="text" id="author"></input></div>')
+        $('form').append('<div><label for="title">Title</label><textarea type="text" id="title"></textarea></div>')
+        $('form').append('<input type="submit"></input>')
+
+        $('form').on('submit', function (event) {
+            event.preventDefault();
+            sendForm()
+        })
+
+
+    }
+
+    function sendForm() {
+        $('form').after('<p>About to send the query to the API</p>')
+        const insert = {
+            title: $("#title").val(),
+            author: $("#author").val(),
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/posts',
+            data: JSON.stringify(insert),
+
+            success: function (data) {
+                addPostRow(data)
+            },
+            error: function () {
+                alert('Error sending the POST query')
+            }
+        })
+    }
+    listPosts()
+    buildForm()
+</script>
+
+</html>

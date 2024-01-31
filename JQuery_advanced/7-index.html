@@ -12,11 +12,36 @@
 
 </body>
 <script type="application/javascript">
-    if (jQuery.support.ajax) {
-        console.log("Ajax is loaded")
-    } else {
-        console.log("Ajax is not loaded")
+    function createSearchForm() {
+        $('body').append('<input type="text"></input>', '<input type="submit"></input>', '<ul></ul>')
+        $('input:nth-of-type(2)').on('click', function () {
+            queryWikipedia($('input:nth-of-type(1)').val());
+        })
     }
+    function addNewArticle(id, title, snippet) {
+        $('ul').append(`<li><p><span>${id} - </span><b>${title}</b></p><p>${snippet}</p></li>`)
+    }
+    function queryWikipedia(search) {
+        const params = new URLSearchParams({
+            action: "query",
+            list: "search",
+            srsearch: search,
+            format: "json",
+            origin: "*"
+        })
+        const url = `https://en.wikipedia.org/w/api.php?${params}`
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function (data) {
+                results = data['query']['search']
+                $.each(results, function (i, result) {
+                    addNewArticle(result.pageid, result.title, result.snippet)
+                })
+            }
+        })
+    }
+    createSearchForm()
 </script>
 
 </html>
