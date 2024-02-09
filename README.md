@@ -11,3 +11,4 @@
 - ## Bootstrap
 - ## Javascript_advanced
 - ## JQuery_advanced
+- ## [Cookies_local_storage](/Cookies_local_storage/)
