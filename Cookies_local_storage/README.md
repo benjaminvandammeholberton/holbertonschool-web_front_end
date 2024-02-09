@@ -25,9 +25,9 @@
 - All of your code will be compiled/executed on Ubuntu 18.04 using Node 12.x and npm 6.x
 - `src/index.js` should stay empty - all your Javascript must be in your HTML, inside `<script>` tag
 
-### Tasks
+## Tasks
 
-#### 0. Create basic cookie
+### 0. Create basic cookie
 
 **Install your development environment:**
 
@@ -61,6 +61,8 @@
 
 - If you are using VSCode, you can use the plugin [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
+---
+
 ### 1. Create cookie with expiration date and specific path
 
 **In a file `1-index.html`:**
@@ -72,6 +74,8 @@
 
 - Access your code with `http://localhost:8080/1-index.html`
 - Use vanilla javascript to complete the task
+
+---
 
 ### 2. Read cookie
 
@@ -89,6 +93,8 @@
 
 - Access your code with `http://localhost:8080/2-index.html`
 - Use vanilla javascript to complete the task
+
+---
 
 ### 3. Delete cookie and mini application
 
@@ -129,6 +135,8 @@
 
 [](./README-images/4c498ffe7d758c80f5f8.png)
 
+---
+
 ### 4. Use js-cookie
 
 **Reusing the code from the previous task:**
@@ -143,6 +151,8 @@
 - Access your code with `http://localhost:8080/4-index.html`
 - Build the Welcome message with Javascript without using HTML
 - Use `js-cookie` for every cookie manipulation
+
+---
 
 ### 5. Local storage
 
@@ -182,6 +192,8 @@
 - Access your code with `http://localhost:8080/5-index.html`
 - Build every feature with vanilla Javascript only
 
+---
+
 ### 6. Session storage
 
 Reusing the code from the previous task, replace the use of local storage by session storage
@@ -198,6 +210,8 @@ Reusing the code from the previous task, replace the use of local storage by ses
 - You must use the session storage of your browser and not a cookie or local storage
 - Access your code with `http://localhost:8080/6-index.html`
 - Build every feature with vanilla Javascript only
+
+---
 
 ### 7. Advanced use of web storage
 
