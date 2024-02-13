@@ -52,7 +52,7 @@
 
 - Try to make your page to look as close to the image below as possible
 
-[](./README-images/5bcb67bddaba890742ab.png)
+![](./README-images/5bcb67bddaba890742ab.png)
 
 - Access your code with `http://localhost:8080/0-index.html`
 - Use vanilla javascript to complete the task
@@ -129,11 +129,11 @@
 
 **The login form should look like the image below**
 
-[](./README-images/dab2e6032514e5f2b692.png)
+![](./README-images/dab2e6032514e5f2b692.png)
 
 **When a user is logged in the page should look like the image below**
 
-[](./README-images/4c498ffe7d758c80f5f8.png)
+![](./README-images/4c498ffe7d758c80f5f8.png)
 
 ---
 
@@ -271,7 +271,7 @@ Reusing the code from the previous task, replace the use of local storage by ses
 
 - You can look at the GIF below to see how the interaction with the different elements works
 
-[](./README-images/f5b5d66a806111a00d3b.gif)
+![](./README-images/f5b5d66a806111a00d3b.gif)
 
 **Requirements:**
 
